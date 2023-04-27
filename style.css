@@ -1,0 +1,18 @@
+Body {
+  margin: 0px;
+}
+
+.main {
+  width: 100%;
+  height: 1200px;
+  background-color: #d4a373;
+}
+
+.ett {
+  height: 88vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#movie_trailer {
+  width: 100%;
+}
