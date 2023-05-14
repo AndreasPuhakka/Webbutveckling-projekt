@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WeGoJim</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo">WGJ</h1>
+      <nav>
+        <ul>
+          <li><a href="startsida.html">Hem</a></li>
+          <li><a href="handstraps.html">Handstraps</a></li>
+          <li><a href="handwraps.html">Handwraps</a></li>
+          <li><a href="dumbbels.html">Dumbbells</a></li>
+          <li><a href="bälten.html">Bälten</a></li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="pruduktsida">
+        <section class="product">
+          <img src="media/dumbbells.jpg" alt="Dumbbells" />
+          <h2>Dumbbells</h2>
+
+          <p class="price">Pris: 299 kr</p>
+          <button id="köpDB">Köp</button>
+        </section>
+
+        <section class="product">
+          <img src="media/dumbbells.jpg" alt="Dumbbells" />
+          <h2>Dumbbells</h2>
+
+          <p class="price">Pris: 299 kr</p>
+          <button id="köpDB1">Köp</button>
+        </section>
+
+        <section class="product">
+          <img src="media/dumbbells.jpg" alt="Dumbbells" />
+          <h2>Dumbbells</h2>
+
+          <p class="price">Pris: 299 kr</p>
+          <button id="köpDB2">Köp</button>
+        </section>
+
+        <section class="product">
+          <img src="media/dumbbells.jpg" alt="Dumbbells" />
+          <h2>Dumbbells</h2>
+
+          <p class="price">Pris: 299 kr</p>
+          <button id="köpDB3">Köp</button>
+        </section>
+      </section>
+      <section id="cartsida">
+        <i class="fa fa-shopping-cart"></i>Cart
+        <div id="cartdropdown">
+          <div class="cart-items"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Kontakt: info@gymutrustning.se</p>
+      <form>
+        <label for="fnamn">Förnamn</label>
+        <input
+          type="text"
+          id="fnamn"
+          name="förnamn"
+          placeholder="Ditt namn..."
+        />
+
+        <label for="lnamn">Efternamn</label>
+        <input
+          type="text"
+          id="lnamn"
+          name="efternamn"
+          placeholder="Ditt efternamn.."
+        />
+
+        <label for="land">Land</label>
+        <select id="land" name="land">
+          <option value="sverige">Sverige</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="Medelande">Medelande</label>
+        <textarea
+          type="text"
+          id="medelande"
+          name="medelande"
+          placeholder="ditt medelande..."
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

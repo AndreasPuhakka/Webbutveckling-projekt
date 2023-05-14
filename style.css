@@ -1,27 +1,176 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;1,500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  
+}
+
 body {
-  margin: 0px;
+	font-family: Arial, sans-serif;
+  background-color: #333;
+  overflow-x: hidden;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-.main {
-  height: 120vh;
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.movie {
-  height: 50vh;
+nav ul {
+	list-style: none;
+	display: flex;
 }
 
-.movies {
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	justify-content: space-between;
+}
+
+#logo {
+  padding: 0px 12px;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	justify-content: space-between;
+}
+
+.product {
+	flex-basis: calc(33.33% - 20px);
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+  height: 30vh;
+}
+
+
+.product h2 {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.product p {
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.product .price {
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.product button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+	background-color: #555;
+}
+
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px;
+  padding-bottom: 100px;
+}
+
+#cartdropdown {
+  position: absolute;
+  z-index: 10;
+  width: 45%;
+}
+
+#pruduktsida {
+  width: 45vw;
+  overflow-x: hidden;
+}
+
+#cartsida {
+  width: 45vw;
+  background-color: rgb(255, 255, 255);
+  background-image: url("media/dumbbells.jpg");
+  
+}
+
+#medelande {
+  margin-top: 15px;
   width: 100%;
+  height: 150px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
 }
 
-#m1 {
-  display: block;
+
+
+/* ---------------------------- */
+
+
+@media screen and (max-width: 655px) {
+  .product img {
+    width: 15vh;
+  }
 }
 
-#m2 {
-  display: none;
+@media screen and (max-width: 555px) {
+  #logo {
+    font-size: 20px;
+    padding: 0px;
+  }
+  nav ul li {
+    margin-right: 5px;
+  }
+  header {
+    justify-content: space-evenly;
+  }
 }
 
-#m3 {
-  display: none;
+@media screen and (max-width: 425px) {
+  main {
+    padding: 0px;
+    justify-content: space-around;
+  }
+
+  header {
+    font-size: 12px;
+  }
+
 }
