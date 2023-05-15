@@ -43,6 +43,10 @@ main {
 	flex-wrap: wrap;
 	padding: 20px;
 	justify-content: space-between;
+	background-image: url(media/background.jpg);
+	filter: brightness(0.9);
+	box-shadow: #292929 15px 20px;
+	justify-content: space-evenly;
 }
 
 #logo {
@@ -116,15 +120,16 @@ footer {
 }
 
 #pruduktsida {
-  width: 45vw;
+  width: 60vw;
   overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #cartsida {
-  width: 45vw;
+  width: 25vw;
   background-color: rgb(255, 255, 255);
-  background-image: url("media/dumbbells.jpg");
-  
+  margin: 0px 0px 20px 0px;
 }
 
 #medelande {
@@ -142,6 +147,26 @@ footer {
 
 
 /* ---------------------------- */
+
+@media screen and (max-width: 1489px) {
+	#cartsida {
+		width: 35vw;
+	}
+}
+
+@media screen and (max-width: 1328px) {
+	#pruduktsida {
+		width: 50vw;
+		display: block;
+	  }
+	#cartsida {
+		width: 40vw;
+	}
+}
+
+@media screen and (max-width: 1191px) {
+	
+}
 
 
 @media screen and (max-width: 655px) {
@@ -164,13 +189,33 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
-  main {
-    padding: 0px;
-    justify-content: space-around;
-  }
+  
 
   header {
     font-size: 12px;
   }
 
+}
+
+@media screen and (max-width: 399px) {
+	#productsida {
+		flex-wrap: nowrap;
+		
+	}
+
+	main {
+		padding: 0px;
+	}
+}
+
+@media screen and (max-width: 332px) {
+	nav ul li {
+		margin-right: 3px;
+		font-size: 10px;
+	}
+
+	#logo {
+		font-size: 15px;
+		margin-right: 8px;
+	}
 }
