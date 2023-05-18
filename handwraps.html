@@ -10,7 +10,7 @@
   <body>
     <header>
       <h1 id="logo">WGJ</h1>
-      <nav>
+      <nav id="navbar">
         <ul>
           <li><a href="startsida.html">Hem</a></li>
           <li><a href="handstraps.html">Handstraps</a></li>
@@ -18,7 +18,11 @@
           <li><a href="dumbbels.html">Dumbbells</a></li>
           <li><a href="bälten.html">Bälten</a></li>
           <li></li>
+          <li>
+            <a href="#" id="cartIcon"><i class="fa fa-shopping-cart"></i></a>
+          </li>
         </ul>
+        <section id="cartdropdown" class="hide"></section>
       </nav>
     </header>
 
@@ -26,7 +30,7 @@
       <section id="pruduktsida">
         <section class="product">
           <img src="media/handwraps.jpg" alt="Handwraps" />
-          <h2>Handwraps</h2>
+          <h2>Star Gear Hand Wraps, Black, 2,5 m</h2>
 
           <p class="price">Pris: 49 kr</p>
           <button id="köpHW">Köp</button>
@@ -42,7 +46,7 @@
 
         <section class="product">
           <img src="media/handwraps3.jpg" alt="Handwraps" />
-          <h2>Handwraps</h2>
+          <h2>Elastic Wrist Wraps, Black</h2>
 
           <p class="price">Pris: 49 kr</p>
           <button id="köpHW2">Köp</button>
@@ -50,14 +54,14 @@
 
         <section class="product">
           <img src="media/handwraps4.jpg" alt="Handwraps" />
-          <h2>Handwraps</h2>
+          <h2>GASP Branch 18'' wrist wrap, black, OS</h2>
 
           <p class="price">Pris: 49 kr</p>
           <button id="köpHW3">Köp</button>
         </section>
         <section class="product">
           <img src="media/handwraps5.jpg" alt="Handwraps" />
-          <h2>Handwraps</h2>
+          <h2>Wrist Wraps Pro, black</h2>
 
           <p class="price">Pris: 49 kr</p>
           <button id="köpHW4">Köp</button>
@@ -69,12 +73,6 @@
           <p class="price">Pris: 189 kr</p>
           <button id="köpHW5">Köp</button>
         </section>
-      </section>
-      <section id="cartsida">
-        <i class="fa fa-shopping-cart"></i>Cart
-        <div id="cartdropdown">
-          <div class="cart-items"></div>
-        </div>
       </section>
     </main>
 
@@ -115,6 +113,6 @@
         <input type="submit" value="Submit" />
       </form>
     </footer>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
